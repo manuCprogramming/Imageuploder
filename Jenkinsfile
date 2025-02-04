@@ -16,7 +16,7 @@ pipeline {
         script {
           echo "Installing dependencies"
           
-          bat 'pip install -r requirements.txt'  // Windows batch command
+          //bat 'pip install -r requirements.txt'  // Windows batch command
         }
       }
     }
