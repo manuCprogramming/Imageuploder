@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: Imageuploader
+  name: imageuploader
   labels:
-    app: Imageuploader
+    app: imageuploader
 spec:
   replicas: 3  # Number of instances of the application to deploy
   selector:
     matchLabels:
-      app: Imageuploader
+      app: imageuploader
   template:
     metadata:
       labels:
-        app: Imageuploader
+        app: imageuploader
     spec:
       containers:
-      - name: Imageuploader
+      - name: imageuploader
         image: galshed1107/django-app:latest
         ports:
         - containerPort: 8000
