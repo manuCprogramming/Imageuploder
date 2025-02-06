@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: imageuploader
-        image: galshed1107/django-app:latest
+        image: manuagasimani/django:latest
         ports:
         - containerPort: 8000
         
