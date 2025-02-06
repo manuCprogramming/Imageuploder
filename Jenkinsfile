@@ -6,7 +6,7 @@ pipeline {
       steps {
         script {
           echo "Cloning the repository"
-          git branch: 'main', url: 'https://github.com/Galshed/Imageuploder.git' 
+          git branch: 'main', url: 'https://github.com/manuCprogramming/Imageuploder.git' 
         }
       }
     }
@@ -40,7 +40,7 @@ pipeline {
 
     stage('Build and Push Docker Image') {
       environment {
-        DOCKER_IMAGE = "galshed1107/django-app:latest" // Image tag with Jenkins build number
+        DOCKER_IMAGE = "manuagasimani/django:latest" // Image tag with Jenkins build number
         REGISTRY_CREDENTIALS = credentials('docker')  // Docker credentials from Jenkins
       }
       steps {
